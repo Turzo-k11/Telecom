@@ -1,0 +1,8 @@
+{
+  "customers": 8000,
+  "churn_rate_pct": 12.72,
+  "monthly_recurring_revenue_sek": 1725975,
+  "annualized_revenue_sek": 20711700,
+  "average_revenue_per_customer_sek": 215.75,
+  "potential_monthly_revenue_at_risk_sek": 241982
+}

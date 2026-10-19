@@ -1,0 +1,31 @@
+{
+  "best_model": "Logistic Regression",
+  "train_rows": 6000,
+  "test_rows": 2000,
+  "threshold": 0.25,
+  "roc_auc": 0.7286,
+  "average_precision": 0.3034,
+  "precision": 0.3486,
+  "recall": 0.2992,
+  "f1": 0.322,
+  "confusion_matrix": [
+    [
+      1604,
+      142
+    ],
+    [
+      178,
+      76
+    ]
+  ],
+  "cross_validation": {
+    "Logistic Regression": {
+      "cv_roc_auc_mean": 0.7175,
+      "cv_average_precision_mean": 0.2998
+    },
+    "Random Forest": {
+      "cv_roc_auc_mean": 0.7004,
+      "cv_average_precision_mean": 0.2817
+    }
+  }
+}
