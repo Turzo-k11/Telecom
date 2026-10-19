@@ -1,0 +1,12 @@
+-- Rename imported table to Subscribers before adding these measures.
+Customers = COUNTROWS(Subscribers)
+Monthly Revenue (SEK) = SUM(Subscribers[monthly_fee_sek])
+Annualized Revenue (SEK) = [Monthly Revenue (SEK)] * 12
+Average Revenue per User (SEK) = DIVIDE([Monthly Revenue (SEK)], [Customers])
+Churned Customers 90d = SUM(Subscribers[churn_next_90d])
+Churn Rate 90d = DIVIDE([Churned Customers 90d], [Customers])
+MRR Associated with Churn (SEK) = CALCULATE([Monthly Revenue (SEK)], Subscribers[churn_next_90d] = 1)
+Share with Support Tickets = DIVIDE(CALCULATE([Customers], Subscribers[support_tickets_90d] > 0), [Customers])
+Average Tenure Months = AVERAGE(Subscribers[tenure_months])
+Average Monthly Data Usage GB = AVERAGE(Subscribers[data_usage_gb])
+-- MRR associated with churn is a scenario proxy, NOT proven lost revenue.

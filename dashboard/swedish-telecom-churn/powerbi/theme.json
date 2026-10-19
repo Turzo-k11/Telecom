@@ -1,0 +1,14 @@
+{
+  "name": "Nordic Telecom Portfolio",
+  "dataColors": [
+    "#20BFC0",
+    "#7386E8",
+    "#F5B971",
+    "#C875A9",
+    "#5DAB7B",
+    "#5F8DAA"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#142B3B",
+  "tableAccent": "#20BFC0"
+}
